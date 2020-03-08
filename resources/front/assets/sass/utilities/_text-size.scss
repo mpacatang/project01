@@ -1,0 +1,65 @@
+
+//
+// Text size
+//
+
+@each $key, $size in $text-sizes {
+	.text-size-#{$key} {
+		font-size: $size !important;
+	}
+}
+
+
+
+//
+// Small screen
+//
+
+@each $key, $size in $text-sizes {
+	@include media-breakpoint-up(sm) {
+		.text-size-sm-#{$key} {
+			font-size: $size !important;
+		}		
+	}
+}
+
+
+
+//
+// Medium screen
+//
+
+@each $key, $size in $text-sizes {
+	@include media-breakpoint-up(md) {
+		.text-size-md-#{$key} {
+			font-size: $size !important;
+		}		
+	}
+}
+
+
+
+//
+// Large screen
+//
+
+@each $key, $size in $text-sizes {
+	@include media-breakpoint-up(lg) {
+		.text-size-lg-#{$key} {
+			font-size: $size !important;
+		}		
+	}
+}
+
+
+//
+// Extra large screen
+//
+
+@each $key, $size in $text-sizes {
+	@include media-breakpoint-up(xl) {
+		.text-size-xl-#{$key} {
+			font-size: $size !important;
+		}		
+	}
+}

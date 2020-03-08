@@ -1,0 +1,30 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #262626
+);
+
+
+
+//
+// Nav
+//
+
+.nav {
+	.nav-link {
+		padding: 4px 10px;
+	}
+	.active {
+		font-weight: 500;
+	}
+	&.nav-light .nav-link {
+		background: transparent;
+		&.active {
+			font-weight: 500;
+			color: map-get($colors, 1);
+		}
+	}
+}

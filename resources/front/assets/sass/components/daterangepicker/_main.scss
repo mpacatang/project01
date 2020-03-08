@@ -1,0 +1,196 @@
+
+
+//
+// Daterangepicker
+//
+
+.daterangepicker {
+    width: 530px;
+    padding: 15px;
+    margin-top: 13px;
+    z-index: 99999 !important;
+    border-color: transparent;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    &:before {
+        width: 0px;
+        content: "";
+        top: -18px;
+        position: absolute;
+        left: 20px !important;
+        border: 9px solid #f5f4f4;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }
+    &:after {
+        width: 0px;
+        content: "";
+        top: -17px;
+        position: absolute;
+        left: 20px !important;
+        border: 9px solid #fff;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }
+    &.single {
+        width: 280px;
+        padding: 5px 15px 15px 15px;
+        .calendar {
+            &.left {
+                width: 100%;
+                margin-right: 0px;
+                .start-date {
+                    border-radius: 0.2em !important;
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: 10px 0px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .calendar {
+        &.left {
+            width: 48.5%;
+            float: left;
+            margin-right: 1.5%;
+        }
+        &.right {
+            width: 48.5%;
+            float: left;
+            margin-left: 1.5%;
+        }
+        .daterangepicker_input {
+            position: relative;
+            .form-control {
+                border-color: #d6d6d6;
+            }
+            i {
+                height: 16px;
+                color: #a2a2a2;
+                top: 0px;
+                bottom: 0px;
+                right: 10px;
+                margin: auto 0px;
+                position: absolute;
+            }
+        }
+        .calendar-table {
+            width: 100%;
+            .table-condensed {
+                width: 100%;
+                thead {
+                    tr {
+                        &:first-child {
+                            th {
+                                padding-top: 15px;
+                                padding-bottom: 7px;
+                                &.month {
+                                    color: #333;
+                                    text-align: center;
+                                    font-weight: 500;
+                                }
+                                &.prev {
+                                    color: #222;
+                                    font-size: 12px;
+                                    text-align: left;
+                                    padding-left: 5px;
+                                }
+                                &.next {
+                                    color: #222;
+                                    font-size: 12px;
+                                    text-align: right;
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                        &:last-child {
+                            th {
+                                font-size: 14px;
+                                padding: 5px 0px;
+                                text-align: center;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            width: (100% / 7);
+                            cursor: pointer;
+                            font-size: 13px;
+                            padding: 2px 0px;
+                            text-align: center;
+                            &.off {
+                                color: #ccc;
+                                &:hover {
+                                    color: #ccc;
+                                }
+                            }
+                            &.disabled {
+                                color: #ccc;
+                                cursor: not-allowed;
+                                text-decoration: line-through;
+                                &:hover {
+                                    color: #ccc;
+                                }
+                            }
+                            &.in-range {
+                                color: #707070;
+                                background: #f7f7f7;
+                                &:hover {
+                                    color: #707070;
+                                }
+                            }
+                            &.active {
+                                background: #1E88E5;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                            &.start-date {
+                                color: #fff;
+                                font-weight: 500;
+                                border-radius: 0.2em 0em 0em 0.2em;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                            &.end-date {
+                                color: #fff;
+                                font-weight: 500;
+                                border-radius: 0em 0.2em 0.2em 0em;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                            &:hover {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ranges {
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+        .btn {
+            height: 36px;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 0px 13px;
+            border-radius: 0.2em;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}

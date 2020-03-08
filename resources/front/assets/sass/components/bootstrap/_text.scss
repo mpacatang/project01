@@ -1,0 +1,255 @@
+
+//
+// Weight and italics
+//
+
+@mixin font-weight-light {
+	font-weight: $font-weight-light !important;
+}
+
+@mixin font-weight-normal {
+	font-weight: $font-weight-normal !important;
+}
+
+@mixin font-weight-bold {
+	font-weight: $font-weight-bold !important;
+}
+
+@mixin font-italic {
+	font-style: italic !important;
+}
+
+
+
+//
+// Very small screen
+//
+
+@include media-breakpoint-up(xs) {
+
+	//
+	// Font weight light
+	//
+
+	.font-weight-xs-light {
+    	@include font-weight-light;
+    }
+
+
+
+    //
+	// Font weight normal
+	//
+
+	.font-weight-xs-normal {
+    	@include font-weight-normal;
+    }
+
+
+
+    //
+	// Font weight bold
+	//
+
+	.font-weight-xs-bold {
+    	@include font-weight-bold;
+    }
+
+
+
+    //
+	// Font weight italic
+	//
+
+	.font-weight-xs-italic {
+    	@include font-italic;
+    }
+}
+
+
+
+//
+// Small screen
+//
+
+@include media-breakpoint-up(sm) {
+
+	//
+	// Font weight light
+	//
+
+	.font-weight-sm-light {
+    	@include font-weight-light;
+    }
+
+
+
+    //
+	// Font weight normal
+	//
+
+	.font-weight-sm-normal {
+    	@include font-weight-normal;
+    }
+
+
+
+    //
+	// Font weight bold
+	//
+
+	.font-weight-sm-bold {
+    	@include font-weight-bold;
+    }
+
+
+
+    //
+	// Font weight italic
+	//
+
+	.font-weight-sm-italic {
+    	@include font-italic;
+    }
+}
+
+
+
+//
+// Medium screen
+//
+
+@include media-breakpoint-up(md) {
+
+	//
+	// Font weight light
+	//
+
+	.font-weight-md-light {
+    	@include font-weight-light;
+    }
+
+
+
+    //
+	// Font weight normal
+	//
+
+	.font-weight-md-normal {
+    	@include font-weight-normal;
+    }
+
+
+
+    //
+	// Font weight bold
+	//
+
+	.font-weight-md-bold {
+    	@include font-weight-bold;
+    }
+
+
+
+    //
+	// Font weight italic
+	//
+
+	.font-weight-md-italic {
+    	@include font-italic;
+    }
+}
+
+
+
+//
+// Large screen
+//
+
+@include media-breakpoint-up(lg) {
+
+	//
+	// Font weight light
+	//
+
+	.font-weight-lg-light {
+    	@include font-weight-light;
+    }
+
+
+
+    //
+	// Font weight normal
+	//
+
+	.font-weight-lg-normal {
+    	@include font-weight-normal;
+    }
+
+
+
+    //
+	// Font weight bold
+	//
+
+	.font-weight-lg-bold {
+    	@include font-weight-bold;
+    }
+
+
+
+    //
+	// Font weight italic
+	//
+
+	.font-weight-lg-italic {
+    	@include font-italic;
+    }
+}
+
+
+
+//
+// Extra large screen
+//
+
+@include media-breakpoint-up(xl) {
+
+	//
+	// Font weight light
+	//
+
+	.font-weight-xl-light {
+    	@include font-weight-light;
+    }
+
+
+
+    //
+	// Font weight normal
+	//
+
+	.font-weight-xl-normal {
+    	@include font-weight-normal;
+    }
+
+
+
+    //
+	// Font weight bold
+	//
+
+	.font-weight-xl-bold {
+    	@include font-weight-bold;
+    }
+
+
+
+    //
+	// Font weight italic
+	//
+
+	.font-weight-xl-italic {
+    	@include font-italic;
+    }
+}

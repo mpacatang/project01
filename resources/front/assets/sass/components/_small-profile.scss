@@ -1,0 +1,28 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #dddddd, 2: #d4336f
+);
+
+
+
+//
+// Small profile
+//
+
+.small-profile {
+	&.with-stories img {
+		padding: 2px;
+		border: 1px solid map-get($colors, 1);
+	}
+	&.with-stories-active img {
+		padding: 2px;
+		border: 2px solid map-get($colors, 2);
+	}
+	img {
+		border: 1px solid $white;
+	}
+}

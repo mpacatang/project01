@@ -1,0 +1,39 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #262626, 2: #5ddcdf
+);
+
+
+
+//
+// Alert
+//
+
+.alert {
+	color: $white;
+	&.alert-light {
+		color: map-get($colors, 1);
+		.alert-link {
+			color: map-get($colors, 1);
+		}
+		.close {
+			&:hover .icon {
+				color: map-get($colors, 1);
+			}
+		}
+	}
+	.close {
+		&:hover .icon {
+			color: $white;
+		}
+		.icon {
+			display: block;
+			margin-top: 2px;
+			font-size: map-get($text-sizes, 15);
+		}
+	}
+}

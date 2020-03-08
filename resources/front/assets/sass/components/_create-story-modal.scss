@@ -1,0 +1,89 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #262626, 2: rgba(0, 0, 0, 0.5)
+);
+
+
+
+//
+// Create story modal
+//
+
+.create-story-modal {
+    .story-preview {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .close {
+        z-index: 3;
+        width: 17px;
+        height: 17px;
+        position: relative;
+        &.light {
+            opacity: 1;
+            &:after,
+            &:before {
+                background: $white;
+            }
+        }
+        &:after,
+        &:before {
+            content: "";
+            width: 17px;
+            height: 2px;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+            position: absolute;
+            background: map-get($colors, 1);
+        }
+        &:after {
+            transform: rotate(45deg);
+        }
+        &:before {
+            transform: rotate(-45deg);
+        }
+    }
+    .image-box {
+        width: 100%;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 180%;
+        }
+    }
+    .story-image {
+        &:before {
+            content: "";
+            width: 100%;
+            height: 70px;
+            top: 0px;
+            left: 0px;
+            z-index: 2;
+            position: absolute;
+            border-radius: 0.2rem 0.2rem 0rem 0rem;
+            background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), map-get($colors, 2));
+        }
+        &:after {
+            content: "";
+            width: 100%;
+            height: 70px;
+            left: 0px;
+            bottom: 0px;
+            z-index: 2;
+            position: absolute;
+            border-radius: 0rem 0rem 0.2rem 0.2rem;
+            background: -webkit-linear-gradient(bottom, map-get($colors, 2), rgba(0, 0, 0, 0));
+        }
+    }
+    .add-story {
+        z-index: 3;
+    }
+}

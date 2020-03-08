@@ -1,0 +1,75 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #262626
+);
+
+
+
+//
+// Story modal
+//
+
+.story-modal {
+    background: map-get($colors, 1);
+    .modal-dialog {
+        max-width: 320px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        .story-progress .progress {
+            &:first-child {
+                margin-right: 2px;
+            }
+            &:last-child {
+                margin-left: 2px;    
+            }
+            &:not(:first-child):not(:last-child) {
+                margin: 0px 2px;
+            }
+            .progress-bar {
+                transition: none;
+                &.animate {
+                    transition: all 5s ease;
+                }
+            }
+        }
+    }
+    .close {
+        z-index: 3;
+        opacity: 1;
+        width: 17px;
+        height: 17px;
+        position: relative;
+        &:after,
+        &:before {
+            content: "";
+            width: 20px;
+            height: 2px;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+            position: absolute;
+            background: $white;
+        }
+        &:after {
+            transform: rotate(45deg);
+        }
+        &:before {
+            transform: rotate(-45deg);
+        }
+    }
+    .image-box {
+        width: 100%;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 180%;
+        }
+    }
+}

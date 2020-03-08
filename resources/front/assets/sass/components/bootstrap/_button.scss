@@ -1,0 +1,35 @@
+
+
+//
+// Colors
+//
+
+$colors: (
+    1: #788288, 2: #fcfcfd, 3: #cbd0d8, 4: #e5e8ec
+);
+
+
+
+//
+// Button
+//
+
+.btn {
+	&.btn-light {
+		color: map-get($colors, 1);
+		background: map-get($colors, 2);
+	}
+	&.btn-warning {
+		color: $white;
+	}
+	&.btn-info {
+		color: $white;
+	}
+	&.btn-link {
+		border-color: $blue;
+	}
+	&.btn-outline-light {
+		color: map-get($colors, 3);
+		border-color: map-get($colors, 4);
+	}
+}

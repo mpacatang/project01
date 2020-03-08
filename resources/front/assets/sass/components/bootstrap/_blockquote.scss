@@ -1,0 +1,19 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #8c8c8c
+);
+
+
+
+//
+// Blockquote
+//
+
+.blockquote-footer {
+	margin-top: 10px;
+	color: map-get($colors, 1);
+}

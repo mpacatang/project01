@@ -1,0 +1,169 @@
+
+
+//
+// Position
+//
+
+@mixin position-breakpoint($breakpoint) {
+	@each $key, $spacer in $spacers {
+		.pos-#{$breakpoint}-#{$key} {
+			top: #{$spacer} !important;
+			right: #{$spacer} !important;
+			bottom: #{$spacer} !important;
+			left: #{$spacer} !important;
+		}
+
+		.posx-#{$breakpoint}-#{$key} {
+			left: #{$spacer} !important;
+			right: #{$spacer} !important;
+		}
+
+		.posy-#{$breakpoint}-#{$key} {
+			top: #{$spacer} !important;
+			bottom: #{$spacer} !important;
+		}
+
+		.post-#{$breakpoint}-#{$key} {
+			top: #{$spacer} !important;
+		}
+
+		.posr-#{$breakpoint}-#{$key} {
+			right: #{$spacer} !important;
+		}
+
+		.posb-#{$breakpoint}-#{$key} {
+			bottom: #{$spacer} !important;
+		}
+
+		.posl-#{$breakpoint}-#{$key} {
+			left: #{$spacer} !important;
+		}
+
+		.posmt-#{$breakpoint}-#{$key} {
+			top: -#{$spacer} !important;
+		}
+
+		.posmr-#{$breakpoint}-#{$key} {
+			right: -#{$spacer} !important;
+		}
+
+		.posmb-#{$breakpoint}-#{$key} {
+			bottom: -#{$spacer} !important;
+		}
+
+		.posml-#{$breakpoint}-#{$key} {
+			left: -#{$spacer} !important;
+		}
+	}
+
+	.position-#{$breakpoint}-static {
+		position: static !important;
+	}
+
+	.position-#{$breakpoint}-relative {
+		position: relative !important;
+	}
+
+	.position-#{$breakpoint}-absolute {
+		position: absolute !important;
+	}
+
+	.position-#{$breakpoint}-fixed {
+		position: fixed !important;
+	}
+	
+	.position-#{$breakpoint}-sticky {
+		position: sticky !important;
+	}
+}
+
+@each $key, $spacer in $spacers {
+	.pos-#{$key} {
+		top: #{$spacer} !important;
+		right: #{$spacer} !important;
+		bottom: #{$spacer} !important;
+		left: #{$spacer} !important;
+	}
+
+	.posx-#{$key} {
+		left: #{$spacer} !important;
+		right: #{$spacer} !important;
+	}
+
+	.posy-#{$key} {
+		top: #{$spacer} !important;
+		bottom: #{$spacer} !important;
+	}
+
+	.post-#{$key} {
+		top: #{$spacer} !important;
+	}
+
+	.posr-#{$key} {
+		right: #{$spacer} !important;
+	}
+
+	.posb-#{$key} {
+		bottom: #{$spacer} !important;
+	}
+
+	.posl-#{$key} {
+		left: #{$spacer} !important;
+	}
+
+	.posmt-#{$key} {
+		top: -#{$spacer} !important;
+	}
+
+	.posmr-#{$key} {
+		right: -#{$spacer} !important;
+	}
+
+	.posmb-#{$key} {
+		bottom: -#{$spacer} !important;
+	}
+
+	.posml-#{$key} {
+		left: -#{$spacer} !important;
+	}
+}
+
+
+
+//
+// Small screen
+//
+
+@include media-breakpoint-up(sm) {
+	@include position-breakpoint(sm);
+}
+
+
+
+//
+// Medium screen
+//
+
+@include media-breakpoint-up(md) {
+	@include position-breakpoint(md);
+}
+
+
+
+//
+// Large screen
+//
+
+@include media-breakpoint-up(lg) {
+	@include position-breakpoint(lg);
+}
+
+
+
+//
+// Extra large screen
+//
+
+@include media-breakpoint-up(xl) {
+	@include position-breakpoint(xl);
+}

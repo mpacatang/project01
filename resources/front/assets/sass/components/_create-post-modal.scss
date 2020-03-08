@@ -1,0 +1,49 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #262626
+);
+
+
+
+//
+// Create post modal
+//
+
+.create-post-modal {
+    .close {
+        width: 17px;
+        height: 17px;
+        position: relative;
+        &:after,
+        &:before {
+            content: "";
+            width: 17px;
+            height: 2px;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+            position: absolute;
+            background: map-get($colors, 1);
+        }
+        &:after {
+            transform: rotate(45deg);
+        }
+        &:before {
+            transform: rotate(-45deg);
+        }
+    }
+    .image-box {
+        width: 100%;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+    }
+}

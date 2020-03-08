@@ -1,0 +1,237 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #e6e6e6
+);
+
+
+
+//
+// Form control
+//
+
+.form-control {
+	font-weight: $font-weight-base;
+	border-color: map-get($colors, 1);
+}
+
+//
+// Mixin
+//
+
+@mixin form-control-sm {
+	height: $input-height-sm;
+	padding: $input-padding-y-sm $input-padding-x-sm;
+	font-size: $font-size-sm;
+	line-height: $input-line-height-sm;
+	@include border-radius($input-border-radius-sm);
+}
+
+@mixin form-control-md {
+	height: $input-height;
+	padding: $input-padding-y $input-padding-x;
+	font-size: $font-size-base;
+	line-height: $input-line-height;
+
+	@if $enable-rounded {
+		border-radius: $input-border-radius;
+	} @else {
+		border-radius: 0;
+	}
+}
+
+@mixin form-control-lg {
+	height: $input-height-lg;
+	padding: $input-padding-y-lg $input-padding-x-lg;
+	font-size: $font-size-lg;
+	line-height: $input-line-height-lg;
+	@include border-radius($input-border-radius-lg);
+}
+
+
+
+//
+// Very small screen
+//
+
+@include media-breakpoint-up(xs) {
+
+	//
+	// Form control xs
+	//
+
+	.form-control-xs-sm {
+    	@include form-control-sm;
+    }
+
+
+
+    //
+	// Form control md
+	//
+
+	.form-control-xs-md {
+    	@include form-control-md;
+    }
+
+
+
+    //
+	// Form control lg
+	//
+
+	.form-control-xs-lg {
+    	@include form-control-lg;
+    }
+}
+
+
+
+//
+// Small screen
+//
+
+@include media-breakpoint-up(sm) {
+
+	//
+	// Form control sm
+	//
+
+	.form-control-sm-sm {
+    	@include form-control-sm;
+    }
+
+
+
+    //
+	// Form control md
+	//
+
+	.form-control-sm-md {
+    	@include form-control-md;
+    }
+
+
+
+    //
+	// Form control lg
+	//
+
+	.form-control-sm-lg {
+    	@include form-control-lg;
+    }
+}
+
+
+
+//
+// Medium screen
+//
+
+@include media-breakpoint-up(md) {
+
+	//
+	// Form control sm
+	//
+
+	.form-control-md-sm {
+    	@include form-control-sm;
+    }
+
+
+
+    //
+	// Form control md
+	//
+
+	.form-control-md-md {
+    	@include form-control-md;
+    }
+
+
+
+    //
+	// Form control lg
+	//
+
+	.form-control-md-lg {
+    	@include form-control-lg;
+    }
+}
+
+
+
+//
+// Large screen
+//
+
+@include media-breakpoint-up(lg) {
+
+	//
+	// Form control sm
+	//
+
+	.form-control-lg-sm {
+    	@include form-control-sm;
+    }
+
+
+
+    //
+	// Form control md
+	//
+
+	.form-control-lg-md {
+    	@include form-control-md;
+    }
+
+
+
+    //
+	// Form control lg
+	//
+
+	.form-control-lg-lg {
+    	@include form-control-lg;
+    }
+}
+
+
+
+//
+// Extra large screen
+//
+
+@include media-breakpoint-up(xl) {
+
+	//
+	// Form control sm
+	//
+
+	.form-control-xl-sm {
+    	@include form-control-sm;
+    }
+
+
+
+    //
+	// Form control md
+	//
+
+	.form-control-xl-md {
+    	@include form-control-md;
+    }
+
+
+
+    //
+	// Form control lg
+	//
+
+	.form-control-xl-lg {
+    	@include form-control-lg;
+    }
+}

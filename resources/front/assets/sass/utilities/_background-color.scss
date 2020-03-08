@@ -1,0 +1,66 @@
+
+//
+// Background color
+//
+
+@each $key, $color in $main-colors {
+	.bg-color-#{$key} {
+		background-color: $color !important;
+	}
+}
+
+
+
+//
+// Small screen
+//
+
+@each $key, $color in $main-colors {
+	@include media-breakpoint-up(sm) {
+		.bg-color-sm-#{$key} {
+			background-color: $color !important;
+		}		
+	}
+}
+
+
+
+//
+// Medium screen
+//
+
+@each $key, $color in $main-colors {
+	@include media-breakpoint-up(md) {
+		.bg-color-md-#{$key} {
+			background-color: $color !important;
+		}		
+	}
+}
+
+
+
+//
+// Large screen
+//
+
+@each $key, $color in $main-colors {
+	@include media-breakpoint-up(lg) {
+		.bg-color-lg-#{$key} {
+			background-color: $color !important;
+		}		
+	}
+}
+
+
+
+//
+// Extra large screen
+//
+
+@each $key, $color in $main-colors {
+	@include media-breakpoint-up(xl) {
+		.bg-color-xl-#{$key} {
+			background-color: $color !important;
+		}		
+	}
+}

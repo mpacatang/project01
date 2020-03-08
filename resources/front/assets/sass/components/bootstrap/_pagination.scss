@@ -1,0 +1,44 @@
+
+
+//
+// Colors
+//
+
+$colors: (
+    1: #8c8c8c, 2: #e6e6e6
+);
+
+
+
+//
+// Pagination
+//
+
+.pagination {
+	&.no-border > .page-item > .page-link {
+		border: 0px;
+	}
+	> .page-item {
+		margin: 0px map-get($spacers, 3);
+		&.active {
+			> .page-link {
+				color: $white;
+				background: map-get($colors, 1);
+				&:hover {
+					background: map-get($colors, 1);
+				}
+			}	
+		}
+		> .page-link {
+			border-top-left-radius: 50px !important;
+			border-bottom-left-radius: 50px !important;
+			border-top-right-radius: 50px !important;
+			border-bottom-right-radius: 50px !important;
+			color: map-get($colors, 1);
+			border-color: map-get($colors, 2);
+			&:hover {
+				background: map-get($colors, 2);
+			}
+		}
+	}
+}

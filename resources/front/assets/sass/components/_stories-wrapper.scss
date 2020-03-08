@@ -1,0 +1,32 @@
+
+//
+// Stories wrapper
+//
+
+.stories-wrapper {
+	@media (max-width: map-get($grid-breakpoints, lg)) {
+		height: 100px;
+		max-width: 605px;
+		overflow: hidden;
+	}
+	.stories-wrapper-box {
+		@media (min-width: map-get($grid-breakpoints, lg)) {
+			overflow: auto;
+			max-height: 260px;
+		}
+
+		@media (max-width: map-get($grid-breakpoints, lg)) {
+			width: 100%;
+		    height: 140px;
+		    overflow: auto;
+		}
+		.stories .user-name {
+			@media (max-width: map-get($grid-breakpoints, lg)) {
+				width: 60px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+}

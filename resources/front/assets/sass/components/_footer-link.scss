@@ -1,0 +1,28 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #b1bbd1
+);
+
+
+
+//
+// Small profile
+//
+
+.footer-link a:not(:last-child) {
+	position: relative;
+	&:before {
+		content: "";
+	    width: 2px;
+	    height: 2px;
+	    top: 7px;
+	    right: -8px;
+	    position: absolute;
+	    border-radius: 50px;
+		background: map-get($colors, 1);
+	}
+}

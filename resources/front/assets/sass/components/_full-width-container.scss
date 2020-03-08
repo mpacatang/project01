@@ -1,0 +1,10 @@
+
+//
+// Full width container
+//
+
+.full-width-container {
+	@media (max-width: map-get($grid-breakpoints, lg)) {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,39 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #262626, 2: #f1f1f1, 3: #e6e6e6, 4: #f5f5f5
+);
+
+
+
+//
+// Dropdown menu
+//
+
+.dropdown-menu {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 0px;
+	border: 1px solid map-get($colors, 3);
+	.dropdown-header {
+		font-weight: 400;
+		padding: 10px 20px;
+		font-size: $font-size;
+	}
+	.dropdown-item {
+		padding: 10px 20px;
+		font-weight: $font-weight-base;
+		color: map-get($colors, 1);
+		&:hover {
+			background: map-get($colors, 4);
+		}
+	}
+	.dropdown-divider {
+		margin: 0px;
+		border-color: map-get($colors, 2);
+	}
+}

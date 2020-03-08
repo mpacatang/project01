@@ -1,0 +1,47 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #e6e6e6, 2: #262626, 3: #999999
+);
+
+
+
+//
+// Profile post nav
+//
+
+.profile-post-nav {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-bottom-width: 0px;
+	border-color: map-get($colors, 1);
+	.nav-item {
+		width: 100px;
+	    text-align: center;
+
+		@media (max-width: map-get($grid-breakpoints, sm)) {
+    		width: (100% / 3);
+    	}
+
+		.nav-link {
+			padding: 4px 0px;
+			border-left-width: 0px;
+			border-right-width: 0px;
+			border-bottom-width: 0px;
+	    	color: map-get($colors, 3);
+	    	&.active {
+	    		color: map-get($colors, 2);
+				border-color: map-get($colors, 2);
+				border-bottom-color: transparent;
+
+				@media (max-width: map-get($grid-breakpoints, md)) {
+					color: $blue;
+					border-top-color: map-get($colors, 1);
+				}
+	    	}
+	    }
+	}
+}

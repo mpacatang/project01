@@ -1,0 +1,25 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #fafafa, 2: #e6e6e6
+);
+
+
+
+//
+// Settings
+//
+
+.settings {
+	max-width: 800px;
+	min-height: 450px;
+	.settings-menu {
+		border-right: 1px solid map-get($colors, 2);
+		.active {
+			background: map-get($colors, 1);
+		}
+	}
+}

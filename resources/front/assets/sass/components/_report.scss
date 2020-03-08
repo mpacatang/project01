@@ -1,0 +1,9 @@
+
+//
+// Report
+//
+
+.report {
+	z-index: 1500;
+	@include animate(fadeInUp, 0.3s);
+}

@@ -1,0 +1,17 @@
+
+
+//
+// Card
+//
+
+.card {
+	@each $color, $value in $theme-colors {
+		&.bg-#{$color} {
+			border-color: $value;
+			.card-header {
+				background: transparent;
+				border-bottom: 1px solid rgba(0, 0, 0, .08);
+			}	
+		}
+	}
+}

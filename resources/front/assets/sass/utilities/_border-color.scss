@@ -1,0 +1,147 @@
+
+
+//
+// Border color
+//
+
+@each $key, $color in $main-colors {
+	.border-color-#{$key} {
+		border-color: $color !important;
+	}
+
+	.border-top-color-#{$key} {
+		border-top-color: $color !important;
+	}
+
+	.border-right-color-#{$key} {
+		border-right-color: $color !important;
+	}
+
+	.border-bottom-color-#{$key} {
+		border-bottom-color: $color !important;
+	}
+
+	.border-left-color-#{$key} {
+		border-left-color: $color !important;
+	}
+}
+
+
+
+//
+// Small screen
+//
+
+@each $key, $color in $main-colors {
+	@include media-breakpoint-up(sm) {
+		.border-color-sm-#{$key} {
+			border-color: $color !important;
+		}
+
+		.border-top-color-sm-#{$key} {
+			border-top-color: $color !important;
+		}
+
+		.border-right-color-sm-#{$key} {
+			border-right-color: $color !important;
+		}
+
+		.border-bottom-color-sm-#{$key} {
+			border-bottom-color: $color !important;
+		}
+
+		.border-left-color-sm-#{$key} {
+			border-left-color: $color !important;
+		}	
+	}
+}
+
+
+
+//
+// Medium screen
+//
+
+@each $key, $color in $main-colors {
+	@include media-breakpoint-up(md) {
+		.border-color-md-#{$key} {
+			border-color: $color !important;
+		}
+
+		.border-top-color-md-#{$key} {
+			border-top-color: $color !important;
+		}
+
+		.border-right-color-md-#{$key} {
+			border-right-color: $color !important;
+		}
+
+		.border-bottom-color-md-#{$key} {
+			border-bottom-color: $color !important;
+		}
+
+		.border-left-color-md-#{$key} {
+			border-left-color: $color !important;
+		}	
+	}
+}
+
+
+
+//
+// Large screen
+//
+
+@each $key, $color in $main-colors {
+	@include media-breakpoint-up(lg) {
+		.border-color-lg-#{$key} {
+			border-color: $color !important;
+		}
+
+		.border-top-color-lg-#{$key} {
+			border-top-color: $color !important;
+		}
+
+		.border-right-color-lg-#{$key} {
+			border-right-color: $color !important;
+		}
+
+		.border-bottom-color-lg-#{$key} {
+			border-bottom-color: $color !important;
+		}
+
+		.border-left-color-lg-#{$key} {
+			border-left-color: $color !important;
+		}			
+	}
+}
+
+
+
+//
+// Extra large screen
+//
+
+@each $key, $color in $main-colors {
+	@include media-breakpoint-up(xl) {
+		.border-color-xl-#{$key} {
+			border-color: $color !important;
+		}	
+
+		.border-top-color-xl-#{$key} {
+			border-top-color: $color !important;
+		}
+
+		.border-right-color-xl-#{$key} {
+			border-right-color: $color !important;
+		}
+
+		.border-bottom-color-xl-#{$key} {
+			border-bottom-color: $color !important;
+		}
+
+		.border-left-color-xl-#{$key} {
+			border-left-color: $color !important;
+		}		
+	}
+}

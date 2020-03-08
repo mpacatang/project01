@@ -1,0 +1,29 @@
+
+//
+// Post
+//
+
+.post {
+	@media (max-width: map-get($grid-breakpoints, lg)) {
+		max-width: 605px;
+	}
+	
+	&.landscape {
+		@media (min-width: map-get($grid-breakpoints, lg)) {
+			min-height: 452px;
+		}
+
+		.main-image {
+			@media (min-width: map-get($grid-breakpoints, lg)) {
+				border-radius: 0.2em 0em 0em 0.2em;
+			}
+		}
+
+		.comments {
+			@media (min-width: map-get($grid-breakpoints, lg)) {
+				height: 228px;
+	    		overflow-y: auto;
+			}
+		}
+	}
+}

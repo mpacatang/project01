@@ -1,0 +1,56 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #e6e6e6
+);
+
+
+
+//
+// Mixin
+//
+
+@mixin breadcrumb-outline-variant($bg) {
+	border-color: $bg;
+	color: color-yiq($bg);
+	background: transparent;
+}
+
+@mixin breadcrumb-variant($bg) {
+	background: $bg;
+	border-color: $bg;
+	li {
+		color: color-yiq($bg);
+		&:before {
+			color: color-yiq($bg);
+		}
+		a {
+			color: color-yiq($bg);
+		}
+	}
+}
+
+
+//
+// Alert
+//
+
+.breadcrumb {
+	padding: 5px 10px;
+	background: map-get($colors, 1);
+	border: 1px solid map-get($colors, 1);
+	.breadcrumb-item.active {
+		font-weight: $font-weight-normal;
+	}
+	@each $color, $value in $theme-colors {
+		&.breadcrumb-outline-#{$color} {
+			@include breadcrumb-outline-variant($value);
+		}
+		&.breadcrumb-#{$color} {
+			@include breadcrumb-variant($value);
+		}
+	}
+}

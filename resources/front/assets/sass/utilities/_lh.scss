@@ -1,0 +1,67 @@
+
+
+//
+// Line height
+//
+
+@each $key, $line-height in $line-heights {
+	.lh-#{$key} {
+		line-height: #{$line-height}rem !important;
+	}
+}
+
+
+
+//
+// Small screen
+//
+
+@each $key, $line-height in $line-heights {
+	@include media-breakpoint-up(sm) {
+		.lh-sm-#{$key} {
+			line-height: #{$line-height}rem !important;
+		}		
+	}
+}
+
+
+
+//
+// Medium screen
+//
+
+@each $key, $line-height in $line-heights {
+	@include media-breakpoint-up(md) {
+		.lh-md-#{$key} {
+			line-height: #{$line-height}rem !important;
+		}		
+	}
+}
+
+
+
+//
+// Large screen
+//
+
+@each $key, $line-height in $line-heights {
+	@include media-breakpoint-up(lg) {
+		.lh-lg-#{$key} {
+			line-height: #{$line-height}rem !important;
+		}		
+	}
+}
+
+
+
+//
+// Extra large screen
+//
+
+@each $key, $line-height in $line-heights {
+	@include media-breakpoint-up(xl) {
+		.lh-xl-#{$key} {
+			line-height: #{$line-height}rem !important;
+		}		
+	}
+}

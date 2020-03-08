@@ -1,0 +1,50 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: #dddddd, 2: #d4336f, 3: #fafafa
+);
+
+
+
+//
+// Main profile
+//
+
+.main-profile {
+	img {
+		border-radius: 50%;
+		border: 3px solid map-get($colors, 3);
+		&.with-stories {
+        	padding: 2px;
+        	border: 2px solid map-get($colors, 1);
+
+			@media (min-width: map-get($grid-breakpoints, md)) {
+				padding: 5px;
+			}
+		}
+		&.with-stories-active {
+			padding: 2px;
+			border-color: map-get($colors, 2);
+
+			@media (min-width: map-get($grid-breakpoints, md)) {
+				padding: 5px;
+			}
+		}
+	}
+	.user-info {
+		position: initial;
+		.user-name {
+			max-width: 250px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+
+			@media (max-width: map-get($grid-breakpoints, lg)) {
+				max-width: 200px;
+			}
+		}
+	}
+}

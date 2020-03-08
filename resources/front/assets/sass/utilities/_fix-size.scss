@@ -1,0 +1,134 @@
+
+//
+// Fix width
+//
+
+@each $key, $width in $fix-sizes {
+	.fw-#{$key} {
+		width: $width !important;
+	}
+}
+
+
+
+//
+// Small screen
+//
+
+@each $key, $width in $fix-sizes {
+	@include media-breakpoint-up(sm) {
+		.fw-sm-#{$key} {
+			width: $width !important;
+		}		
+	}
+}
+
+
+
+//
+// Medium screen
+//
+
+@each $key, $width in $fix-sizes {
+	@include media-breakpoint-up(md) {
+		.fw-md-#{$key} {
+			width: $width !important;
+		}		
+	}
+}
+
+
+
+//
+// Large screen
+//
+
+@each $key, $width in $fix-sizes {
+	@include media-breakpoint-up(lg) {
+		.fw-lg-#{$key} {
+			width: $width !important;
+		}		
+	}
+}
+
+
+
+//
+// Extra large screen
+//
+
+@each $key, $width in $fix-sizes {
+	@include media-breakpoint-up(xl) {
+		.fw-xl-#{$key} {
+			width: $width !important;
+		}		
+	}
+}
+
+
+
+//
+// Fix height
+//
+
+@each $key, $height in $fix-sizes {
+	.fh-#{$key} {
+		height: $height !important;
+	}
+}
+
+
+
+//
+// Small screen
+//
+
+@each $key, $height in $fix-sizes {
+	@include media-breakpoint-up(sm) {
+		.fh-sm-#{$key} {
+			height: $height !important;
+		}		
+	}
+}
+
+
+
+//
+// Medium screen
+//
+
+@each $key, $height in $fix-sizes {
+	@include media-breakpoint-up(md) {
+		.fh-md-#{$key} {
+			height: $height !important;
+		}		
+	}
+}
+
+
+
+//
+// Large screen
+//
+
+@each $key, $height in $fix-sizes {
+	@include media-breakpoint-up(lg) {
+		.fh-lg-#{$key} {
+			height: $height !important;
+		}		
+	}
+}
+
+
+
+//
+// Extra large screen
+//
+
+@each $key, $height in $fix-sizes {
+	@include media-breakpoint-up(xl) {
+		.fh-xl-#{$key} {
+			height: $height !important;
+		}		
+	}
+}

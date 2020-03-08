@@ -1,0 +1,56 @@
+
+//
+// Colors
+//
+
+$colors: (
+    1: unquote('#00000038')
+);
+
+
+
+//
+// Profile post
+//
+
+.list-post {
+	@media (max-width: map-get($grid-breakpoints, md)) {
+		margin-left: -2px;
+		margin-right: -2px;
+	}
+
+	.row.sm-gutter {
+		@media (max-width: map-get($grid-breakpoints, md)) {
+			margin-left: -2px;
+			margin-right: -2px;
+		}
+	}
+
+	.col-4,
+	&.sm-gutter > .col-3,
+	&.sm-gutter > .col-6,
+	.sm-gutter > .col-6 {
+		@media (max-width: map-get($grid-breakpoints, md)) {
+			padding-left: 2px !important;
+			padding-right: 2px !important;
+		}
+	}
+
+	.post {
+		&:hover {
+			.overlay {
+				opacity: 1;
+			}
+		}
+		&:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+		.overlay {
+			opacity: 0;
+    		transition: all 0.2s ease;
+			background: map-get($colors, 1);
+		}
+	}
+}

@@ -1,0 +1,86 @@
+
+//
+// Small screen
+//
+
+@each $key, $size in $sizes {
+
+	@include media-breakpoint-up(sm) {
+		.w-sm-#{$key} {
+			width: $size !important;
+		}		
+	}
+
+	@include media-breakpoint-up(sm) {
+		.h-sm-#{$key} {
+			height: $size !important;
+		}		
+	}
+
+}
+
+
+
+//
+// Medium screen
+//
+
+@each $key, $size in $sizes {
+
+	@include media-breakpoint-up(md) {
+		.w-md-#{$key} {
+			width: $size !important;
+		}		
+	}
+
+	@include media-breakpoint-up(md) {
+		.h-md-#{$key} {
+			height: $size !important;
+		}		
+	}
+
+}
+
+
+
+//
+// Large screen
+//
+
+@each $key, $size in $sizes {
+
+	@include media-breakpoint-up(lg) {
+		.w-lg-#{$key} {
+			width: $size !important;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		.h-lg-#{$key} {
+			height: $size !important;
+		}		
+	}
+
+}
+
+
+
+//
+// Extra large screen
+//
+
+@each $key, $size in $sizes {
+
+	@include media-breakpoint-up(xl) {
+		.w-xl-#{$key} {
+			width: $size !important;
+		}		
+	}
+
+	@include media-breakpoint-up(xl) {
+		.h-xl-#{$key} {
+			height: $size !important;
+		}		
+	}
+
+}

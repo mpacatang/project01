@@ -1,0 +1,17 @@
+
+//
+// Suggestion
+//
+
+.suggestion-wrapper {
+	@media (min-width: map-get($grid-breakpoints, lg)) {
+		max-width: map-get($container-max-widths, md);
+	}
+
+	.small-profile {
+		margin-bottom: 10px;
+		&:last-of-type {
+			margin-bottom: 0px;
+		}
+	}
+}
